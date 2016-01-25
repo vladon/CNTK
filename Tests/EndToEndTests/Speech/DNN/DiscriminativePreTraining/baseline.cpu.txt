@@ -1,7 +1,7 @@
-=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/DiscriminativePreTraining/cntk_dpt.config RunDir=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1
+=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/DiscriminativePreTraining/cntk_dpt.cntk RunDir=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1
 running on localhost at 2015/10/12 18:50:35
 command line options: 
-configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/DiscriminativePreTraining/cntk_dpt.config RunDir=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 
+configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/DiscriminativePreTraining/cntk_dpt.cntk RunDir=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -190,7 +190,7 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk_dpt.config:AddLayer2=[    
+configparameters: cntk_dpt.cntk:AddLayer2=[    
     action=edit
     CurrLayer=1
     NewLayer=2
@@ -199,7 +199,7 @@ configparameters: cntk_dpt.config:AddLayer2=[
     editPath=/home/mluser/src/cplx_master/Tests/Speech/Data/ndl/add_layer.mel
 ]
 
-configparameters: cntk_dpt.config:AddLayer3=[    
+configparameters: cntk_dpt.cntk:AddLayer3=[    
     action=edit
     CurrLayer=2
     NewLayer=3
@@ -208,10 +208,10 @@ configparameters: cntk_dpt.config:AddLayer3=[
     editPath=/home/mluser/src/cplx_master/Tests/Speech/Data/ndl/add_layer.mel
 ]
 
-configparameters: cntk_dpt.config:command=DPT_Pre1:AddLayer2:DPT_Pre2:AddLayer3:speechTrain
-configparameters: cntk_dpt.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-configparameters: cntk_dpt.config:deviceId=-1
-configparameters: cntk_dpt.config:DPT_Pre1=[
+configparameters: cntk_dpt.cntk:command=DPT_Pre1:AddLayer2:DPT_Pre2:AddLayer3:speechTrain
+configparameters: cntk_dpt.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+configparameters: cntk_dpt.cntk:deviceId=-1
+configparameters: cntk_dpt.cntk:DPT_Pre1=[
     action=train
     modelPath=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu/models/Pre1/cntkSpeech
     NDLNetworkBuilder=[
@@ -219,7 +219,7 @@ configparameters: cntk_dpt.config:DPT_Pre1=[
     ]
 ]
 
-configparameters: cntk_dpt.config:DPT_Pre2=[
+configparameters: cntk_dpt.cntk:DPT_Pre2=[
     action=train
     modelPath=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu/models/Pre2/cntkSpeech
     NDLNetworkBuilder=[
@@ -227,12 +227,12 @@ configparameters: cntk_dpt.config:DPT_Pre2=[
     ]
 ]
 
-configparameters: cntk_dpt.config:GlobalInvStd=GlobalStats/var.363
-configparameters: cntk_dpt.config:GlobalMean=GlobalStats/mean.363
-configparameters: cntk_dpt.config:GlobalPrior=GlobalStats/prior.132
-configparameters: cntk_dpt.config:ndlMacros=/home/mluser/src/cplx_master/Tests/Speech/Data/ndl/macros.txt
-configparameters: cntk_dpt.config:precision=float
-configparameters: cntk_dpt.config:reader=[
+configparameters: cntk_dpt.cntk:GlobalInvStd=GlobalStats/var.363
+configparameters: cntk_dpt.cntk:GlobalMean=GlobalStats/mean.363
+configparameters: cntk_dpt.cntk:GlobalPrior=GlobalStats/prior.132
+configparameters: cntk_dpt.cntk:ndlMacros=/home/mluser/src/cplx_master/Tests/Speech/Data/ndl/macros.txt
+configparameters: cntk_dpt.cntk:precision=float
+configparameters: cntk_dpt.cntk:reader=[
   readerType=HTKMLFReader
   readMethod=blockRandomize
   miniBatchMode=Partial
@@ -251,8 +251,8 @@ configparameters: cntk_dpt.config:reader=[
   ]
 ]
 
-configparameters: cntk_dpt.config:RunDir=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu
-configparameters: cntk_dpt.config:SGD=[
+configparameters: cntk_dpt.cntk:RunDir=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu
+configparameters: cntk_dpt.cntk:SGD=[
     epochSize=81920
     minibatchSize=256
     learningRatesPerMB=0.8
@@ -262,7 +262,7 @@ configparameters: cntk_dpt.config:SGD=[
     maxEpochs=2
 ]
 
-configparameters: cntk_dpt.config:speechTrain=[
+configparameters: cntk_dpt.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20151012185035.328229/Speech/DNN_DiscriminativePreTraining@debug_cpu/models/cntkSpeech
     deviceId=-1
@@ -284,7 +284,7 @@ configparameters: cntk_dpt.config:speechTrain=[
     ]
 ]
 
-configparameters: cntk_dpt.config:traceLevel=1
+configparameters: cntk_dpt.cntk:traceLevel=1
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: DPT_Pre1 AddLayer2 DPT_Pre2 AddLayer3 speechTrain 
 precision = float

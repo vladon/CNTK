@@ -1,4 +1,4 @@
-=== Running /cygdrive/e/NetScale/CNTK/git_repos/cplx_master2/x64/debug/cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM/cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM DeviceId=-1
+=== Running /cygdrive/e/NetScale/CNTK/git_repos/cplx_master2/x64/debug/cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM/cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM DeviceId=-1
 -------------------------------------------------------------------
 Build info: 
 
@@ -10,7 +10,7 @@ Build info:
 -------------------------------------------------------------------
 running on Amitaga-Win-DT3 at 2015/11/05 01:25:20
 command line: 
-E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM/cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM DeviceId=-1 
+E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM/cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -397,15 +397,15 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain
-configparameters: cntk.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM
-configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:frameMode=false
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:command=speechTrain
+configparameters: cntk.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\LSTM
+configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:frameMode=false
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     modelPath=C:\cygwin64\tmp\cntk-test-20151104172519.825520\Speech\LSTM_Truncated@debug_cpu/models/cntkSpeech.dnn
     deviceId=-1
@@ -584,7 +584,7 @@ feashift = RowSlice(featDim - baseFeatDim, baseFeatDim, features);
     ]
 ]
 
-configparameters: cntk.config:Truncated=true
+configparameters: cntk.cntk:Truncated=true
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: speechTrain 
 precision = float

@@ -11,7 +11,7 @@ Build info:
 -------------------------------------------------------------------
 running on z840-01 at 2016/01/14 10:36:01
 command line: 
-..\..\..\..\x64\Release\CNTK.exe configFile=03_ResNet.config 
+..\..\..\..\x64\Release\CNTK.exe configFile=03_ResNet.cntk 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 RootDir = "."
@@ -202,29 +202,29 @@ Test=[
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: 03_ResNet.config:AddBNEval=[    
+configparameters: 03_ResNet.cntk:AddBNEval=[    
     action=edit
     CurModel=./Output/Models/03_ResNet
     NewModel=./Output/Models/03_ResNet.Eval
     editPath=./03_ResNet.mel
 ]
 
-configparameters: 03_ResNet.config:command=Train:AddBNEval:Test
-configparameters: 03_ResNet.config:ConfigDir=.
-configparameters: 03_ResNet.config:DataDir=.
-configparameters: 03_ResNet.config:deviceId=Auto
-configparameters: 03_ResNet.config:ModelDir=./Output/Models
-configparameters: 03_ResNet.config:ndlMacros=./Macros.ndl
-configparameters: 03_ResNet.config:numMBsToShowResult=200
-configparameters: 03_ResNet.config:OutputDir=./Output
-configparameters: 03_ResNet.config:parallelTrain=false
-configparameters: 03_ResNet.config:precision=float
-configparameters: 03_ResNet.config:prefetch=true
-configparameters: 03_ResNet.config:Proj16to32Filename=./16to32.txt
-configparameters: 03_ResNet.config:Proj32to64Filename=./32to64.txt
-configparameters: 03_ResNet.config:RootDir=.
-configparameters: 03_ResNet.config:stderr=./Output/03_ResNet
-configparameters: 03_ResNet.config:Test=[
+configparameters: 03_ResNet.cntk:command=Train:AddBNEval:Test
+configparameters: 03_ResNet.cntk:ConfigDir=.
+configparameters: 03_ResNet.cntk:DataDir=.
+configparameters: 03_ResNet.cntk:deviceId=Auto
+configparameters: 03_ResNet.cntk:ModelDir=./Output/Models
+configparameters: 03_ResNet.cntk:ndlMacros=./Macros.ndl
+configparameters: 03_ResNet.cntk:numMBsToShowResult=200
+configparameters: 03_ResNet.cntk:OutputDir=./Output
+configparameters: 03_ResNet.cntk:parallelTrain=false
+configparameters: 03_ResNet.cntk:precision=float
+configparameters: 03_ResNet.cntk:prefetch=true
+configparameters: 03_ResNet.cntk:Proj16to32Filename=./16to32.txt
+configparameters: 03_ResNet.cntk:Proj32to64Filename=./32to64.txt
+configparameters: 03_ResNet.cntk:RootDir=.
+configparameters: 03_ResNet.cntk:stderr=./Output/03_ResNet
+configparameters: 03_ResNet.cntk:Test=[
     action=test
     modelPath=./Output/Models/03_ResNet.Eval
     minibatchSize=512
@@ -251,8 +251,8 @@ configparameters: 03_ResNet.config:Test=[
     ]    
 ]
 
-configparameters: 03_ResNet.config:traceLevel=1
-configparameters: 03_ResNet.config:Train=[
+configparameters: 03_ResNet.cntk:traceLevel=1
+configparameters: 03_ResNet.cntk:Train=[
     action=train
     modelPath=./Output/Models/03_ResNet
      NDLNetworkBuilder=[

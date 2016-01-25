@@ -1,7 +1,7 @@
-=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/../cntk.config RunDir=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/.. DeviceId=0 Truncated=false speechTrain=[reader=[nbruttsineachrecurrentiter=2]] speechTrain=[SGD=[epochSize=2560]] speechTrain=[SGD=[maxEpochs=2]] speechTrain=[SGD=[numMBsToShowResult=1]]
+=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/../cntk.cntk RunDir=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/.. DeviceId=0 Truncated=false speechTrain=[reader=[nbruttsineachrecurrentiter=2]] speechTrain=[SGD=[epochSize=2560]] speechTrain=[SGD=[maxEpochs=2]] speechTrain=[SGD=[numMBsToShowResult=1]]
 running on localhost at 2015/10/25 00:27:39
 command line: 
-/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/../cntk.config RunDir=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/.. DeviceId=0 Truncated=false speechTrain=[reader=[nbruttsineachrecurrentiter=2]] speechTrain=[SGD=[epochSize=2560]] speechTrain=[SGD=[maxEpochs=2]] speechTrain=[SGD=[numMBsToShowResult=1]] 
+/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/../cntk.cntk RunDir=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/.. DeviceId=0 Truncated=false speechTrain=[reader=[nbruttsineachrecurrentiter=2]] speechTrain=[SGD=[epochSize=2560]] speechTrain=[SGD=[maxEpochs=2]] speechTrain=[SGD=[numMBsToShowResult=1]] 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -398,15 +398,15 @@ speechTrain=[SGD=[numMBsToShowResult=1]]
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain
-configparameters: cntk.config:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/..
-configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-configparameters: cntk.config:deviceId=0
-configparameters: cntk.config:frameMode=false
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:command=speechTrain
+configparameters: cntk.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/LSTM/FullUtterance/..
+configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+configparameters: cntk.cntk:deviceId=0
+configparameters: cntk.cntk:frameMode=false
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20151025002739.929288/Speech/LSTM_FullUtterance@debug_gpu/models/cntkSpeech.dnn
     deviceId=0
@@ -585,7 +585,7 @@ feashift = RowSlice(featDim - baseFeatDim, baseFeatDim, features);
     ]
 ] [reader=[nbruttsineachrecurrentiter=2]] [SGD=[epochSize=2560]] [SGD=[maxEpochs=2]] [SGD=[numMBsToShowResult=1]]
 
-configparameters: cntk.config:Truncated=false
+configparameters: cntk.cntk:Truncated=false
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: speechTrain 
 precision = float

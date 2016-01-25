@@ -1,4 +1,4 @@
-=== Running C:\Program Files\Microsoft MPI\Bin\/mpiexec.exe -n 3 E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.config currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
+=== Running C:\Program Files\Microsoft MPI\Bin\/mpiexec.exe -n 3 E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.cntk currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
@@ -38,7 +38,7 @@ MPI Rank 0: 		Build Path: E:\NetScale\CNTK\git_repos\cplx_master2\MachineLearnin
 MPI Rank 0: -------------------------------------------------------------------
 MPI Rank 0: running on Amitaga-Win-DT3 at 2015/11/30 03:03:29
 MPI Rank 0: command line: 
-MPI Rank 0: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.config currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr 
+MPI Rank 0: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.cntk currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr 
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 0: precision = "float"
@@ -249,15 +249,15 @@ MPI Rank 0:
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 0: configparameters: cntk.config:command=speechTrain
-MPI Rank 0: configparameters: cntk.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN
-MPI Rank 0: configparameters: cntk.config:currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-MPI Rank 0: configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-MPI Rank 0: configparameters: cntk.config:deviceId=-1
-MPI Rank 0: configparameters: cntk.config:parallelTrain=true
-MPI Rank 0: configparameters: cntk.config:precision=double
-MPI Rank 0: configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu
-MPI Rank 0: configparameters: cntk.config:speechTrain=[
+MPI Rank 0: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 0: configparameters: cntk.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN
+MPI Rank 0: configparameters: cntk.cntk:currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+MPI Rank 0: configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+MPI Rank 0: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 0: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 0: configparameters: cntk.cntk:precision=double
+MPI Rank 0: configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu
+MPI Rank 0: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 0:     action = "train"
 MPI Rank 0:     modelPath = "C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/models/cntkSpeech.dnn"
 MPI Rank 0:     deviceId = -1
@@ -343,7 +343,7 @@ MPI Rank 0:         ]
 MPI Rank 0:     ]
 MPI Rank 0: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] [SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] [SGD=[maxEpochs=4]]
 MPI Rank 0: 
-MPI Rank 0: configparameters: cntk.config:stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
+MPI Rank 0: configparameters: cntk.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: command: speechTrain 
 MPI Rank 0: precision = double
@@ -973,7 +973,7 @@ MPI Rank 1: 		Build Path: E:\NetScale\CNTK\git_repos\cplx_master2\MachineLearnin
 MPI Rank 1: -------------------------------------------------------------------
 MPI Rank 1: running on Amitaga-Win-DT3 at 2015/11/30 03:03:29
 MPI Rank 1: command line: 
-MPI Rank 1: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.config currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr 
+MPI Rank 1: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.cntk currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr 
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 1: precision = "float"
@@ -1184,15 +1184,15 @@ MPI Rank 1:
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 1: configparameters: cntk.config:command=speechTrain
-MPI Rank 1: configparameters: cntk.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN
-MPI Rank 1: configparameters: cntk.config:currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-MPI Rank 1: configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-MPI Rank 1: configparameters: cntk.config:deviceId=-1
-MPI Rank 1: configparameters: cntk.config:parallelTrain=true
-MPI Rank 1: configparameters: cntk.config:precision=double
-MPI Rank 1: configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu
-MPI Rank 1: configparameters: cntk.config:speechTrain=[
+MPI Rank 1: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 1: configparameters: cntk.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN
+MPI Rank 1: configparameters: cntk.cntk:currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+MPI Rank 1: configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+MPI Rank 1: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 1: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 1: configparameters: cntk.cntk:precision=double
+MPI Rank 1: configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu
+MPI Rank 1: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 1:     action = "train"
 MPI Rank 1:     modelPath = "C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/models/cntkSpeech.dnn"
 MPI Rank 1:     deviceId = -1
@@ -1278,7 +1278,7 @@ MPI Rank 1:         ]
 MPI Rank 1:     ]
 MPI Rank 1: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] [SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] [SGD=[maxEpochs=4]]
 MPI Rank 1: 
-MPI Rank 1: configparameters: cntk.config:stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
+MPI Rank 1: configparameters: cntk.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: command: speechTrain 
 MPI Rank 1: precision = double
@@ -1908,7 +1908,7 @@ MPI Rank 2: 		Build Path: E:\NetScale\CNTK\git_repos\cplx_master2\MachineLearnin
 MPI Rank 2: -------------------------------------------------------------------
 MPI Rank 2: running on Amitaga-Win-DT3 at 2015/11/30 03:03:30
 MPI Rank 2: command line: 
-MPI Rank 2: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.config currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr 
+MPI Rank 2: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN/cntk.cntk currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN DeviceId=-1 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr 
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 2: precision = "float"
@@ -2119,15 +2119,15 @@ MPI Rank 2:
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 2: configparameters: cntk.config:command=speechTrain
-MPI Rank 2: configparameters: cntk.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN
-MPI Rank 2: configparameters: cntk.config:currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-MPI Rank 2: configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-MPI Rank 2: configparameters: cntk.config:deviceId=-1
-MPI Rank 2: configparameters: cntk.config:parallelTrain=true
-MPI Rank 2: configparameters: cntk.config:precision=double
-MPI Rank 2: configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu
-MPI Rank 2: configparameters: cntk.config:speechTrain=[
+MPI Rank 2: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 2: configparameters: cntk.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN
+MPI Rank 2: configparameters: cntk.cntk:currentDirectory=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+MPI Rank 2: configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+MPI Rank 2: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 2: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 2: configparameters: cntk.cntk:precision=double
+MPI Rank 2: configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu
+MPI Rank 2: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 2:     action = "train"
 MPI Rank 2:     modelPath = "C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/models/cntkSpeech.dnn"
 MPI Rank 2:     deviceId = -1
@@ -2213,7 +2213,7 @@ MPI Rank 2:         ]
 MPI Rank 2:     ]
 MPI Rank 2: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] [SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] [SGD=[maxEpochs=4]]
 MPI Rank 2: 
-MPI Rank 2: configparameters: cntk.config:stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
+MPI Rank 2: configparameters: cntk.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151129190328.957292\Speech\DNN_ParallelBufferedAsyncGradientAggregation@debug_cpu/stderr
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: command: speechTrain 
 MPI Rank 2: precision = double

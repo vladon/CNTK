@@ -1,4 +1,4 @@
-=== Running C:\Program Files\Microsoft MPI\Bin\/mpiexec.exe -n 3 E:\NetScale\CNTK\git_repos\cplx_master\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]]
+=== Running C:\Program Files\Microsoft MPI\Bin\/mpiexec.exe -n 3 E:\NetScale\CNTK\git_repos\cplx_master\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]]
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
@@ -38,7 +38,7 @@ MPI Rank 0: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 0: -------------------------------------------------------------------
 MPI Rank 0: running on Amitaga-Win-DT3 at 2015/10/06 17:56:37
 MPI Rank 0: command line options: 
-MPI Rank 0: configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] 
+MPI Rank 0: configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] 
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 0: precision=float
@@ -241,13 +241,13 @@ MPI Rank 0:
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 0: configparameters: cntk.config:command=speechTrain
-MPI Rank 0: configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data
-MPI Rank 0: configparameters: cntk.config:deviceId=-1
-MPI Rank 0: configparameters: cntk.config:parallelTrain=true
-MPI Rank 0: configparameters: cntk.config:precision=double
-MPI Rank 0: configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu
-MPI Rank 0: configparameters: cntk.config:speechTrain=[
+MPI Rank 0: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 0: configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data
+MPI Rank 0: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 0: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 0: configparameters: cntk.cntk:precision=double
+MPI Rank 0: configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu
+MPI Rank 0: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 0:     action=train
 MPI Rank 0:     modelPath=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 0:     deviceId=-1
@@ -333,7 +333,7 @@ MPI Rank 0:       ]
 MPI Rank 0:     ]
 MPI Rank 0: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]]
 MPI Rank 0: 
-MPI Rank 0: configparameters: cntk.config:stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr
+MPI Rank 0: configparameters: cntk.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: command: speechTrain 
 MPI Rank 0: precision = double
@@ -514,7 +514,7 @@ MPI Rank 1: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 1: -------------------------------------------------------------------
 MPI Rank 1: running on Amitaga-Win-DT3 at 2015/10/06 17:56:38
 MPI Rank 1: command line options: 
-MPI Rank 1: configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] 
+MPI Rank 1: configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] 
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 1: precision=float
@@ -717,13 +717,13 @@ MPI Rank 1:
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 1: configparameters: cntk.config:command=speechTrain
-MPI Rank 1: configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data
-MPI Rank 1: configparameters: cntk.config:deviceId=-1
-MPI Rank 1: configparameters: cntk.config:parallelTrain=true
-MPI Rank 1: configparameters: cntk.config:precision=double
-MPI Rank 1: configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu
-MPI Rank 1: configparameters: cntk.config:speechTrain=[
+MPI Rank 1: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 1: configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data
+MPI Rank 1: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 1: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 1: configparameters: cntk.cntk:precision=double
+MPI Rank 1: configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu
+MPI Rank 1: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 1:     action=train
 MPI Rank 1:     modelPath=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 1:     deviceId=-1
@@ -809,7 +809,7 @@ MPI Rank 1:       ]
 MPI Rank 1:     ]
 MPI Rank 1: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]]
 MPI Rank 1: 
-MPI Rank 1: configparameters: cntk.config:stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr
+MPI Rank 1: configparameters: cntk.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: command: speechTrain 
 MPI Rank 1: precision = double
@@ -990,7 +990,7 @@ MPI Rank 2: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 2: -------------------------------------------------------------------
 MPI Rank 2: running on Amitaga-Win-DT3 at 2015/10/06 17:56:38
 MPI Rank 2: command line options: 
-MPI Rank 2: configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] 
+MPI Rank 2: configFile=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\DNN\cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data DeviceId=-1 stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] 
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 2: precision=float
@@ -1193,13 +1193,13 @@ MPI Rank 2:
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 2: configparameters: cntk.config:command=speechTrain
-MPI Rank 2: configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data
-MPI Rank 2: configparameters: cntk.config:deviceId=-1
-MPI Rank 2: configparameters: cntk.config:parallelTrain=true
-MPI Rank 2: configparameters: cntk.config:precision=double
-MPI Rank 2: configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu
-MPI Rank 2: configparameters: cntk.config:speechTrain=[
+MPI Rank 2: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 2: configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master\Tests\Speech\Data
+MPI Rank 2: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 2: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 2: configparameters: cntk.cntk:precision=double
+MPI Rank 2: configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu
+MPI Rank 2: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 2:     action=train
 MPI Rank 2:     modelPath=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 2:     deviceId=-1
@@ -1285,7 +1285,7 @@ MPI Rank 2:       ]
 MPI Rank 2:     ]
 MPI Rank 2: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=1]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]]
 MPI Rank 2: 
-MPI Rank 2: configparameters: cntk.config:stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr
+MPI Rank 2: configparameters: cntk.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151006095637.485670\Speech\DNN_Parallel1BitQuantization@debug_cpu/stderr
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: command: speechTrain 
 MPI Rank 2: precision = double

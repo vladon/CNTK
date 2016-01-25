@@ -12,7 +12,7 @@ Build info:
 -------------------------------------------------------------------
 running on localhost at 2015/12/18 23:25:20
 command line: 
-../../../bin/cntk configFile=QuickE2E/cntk.config ConfigDir=QuickE2E RunDir=_out DataDir=Data DeviceId=Auto stderr=_outgpu.txt 
+../../../bin/cntk configFile=QuickE2E/cntk.cntk ConfigDir=QuickE2E RunDir=_out DataDir=Data DeviceId=Auto stderr=_outgpu.txt 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision = "float"
@@ -145,17 +145,17 @@ stderr=_outgpu.txt
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=train:test
-configparameters: cntk.config:ConfigDir=QuickE2E
-configparameters: cntk.config:DataDir=Data
-configparameters: cntk.config:deviceId=Auto
-configparameters: cntk.config:ndlMacros=QuickE2E/Macros.ndl
-configparameters: cntk.config:numCPUThreads=8
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=_out
-configparameters: cntk.config:stderr=_outgpu.txt
-configparameters: cntk.config:test=[
+configparameters: cntk.cntk:command=train:test
+configparameters: cntk.cntk:ConfigDir=QuickE2E
+configparameters: cntk.cntk:DataDir=Data
+configparameters: cntk.cntk:deviceId=Auto
+configparameters: cntk.cntk:ndlMacros=QuickE2E/Macros.ndl
+configparameters: cntk.cntk:numCPUThreads=8
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=_out
+configparameters: cntk.cntk:stderr=_outgpu.txt
+configparameters: cntk.cntk:test=[
     action = "test"
     modelPath = "_out/models/cntk.dnn"
     NDLNetworkBuilder = [
@@ -177,7 +177,7 @@ configparameters: cntk.config:test=[
     ]    
 ]
 
-configparameters: cntk.config:train=[
+configparameters: cntk.cntk:train=[
     action = "train"
     modelPath = "_out/models/cntk.dnn"
     traceLevel = 1
@@ -932,7 +932,7 @@ Build info:
 -------------------------------------------------------------------
 running on localhost at 2015/12/18 23:27:59
 command line: 
-../../../bin/cntk configFile=QuickE2E/cntk.config ConfigDir=QuickE2E RunDir=_out DataDir=Data DeviceId=Auto stderr=gpu.txt 
+../../../bin/cntk configFile=QuickE2E/cntk.cntk ConfigDir=QuickE2E RunDir=_out DataDir=Data DeviceId=Auto stderr=gpu.txt 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision = "float"
@@ -1065,17 +1065,17 @@ stderr=gpu.txt
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=train:test
-configparameters: cntk.config:ConfigDir=QuickE2E
-configparameters: cntk.config:DataDir=Data
-configparameters: cntk.config:deviceId=Auto
-configparameters: cntk.config:ndlMacros=QuickE2E/Macros.ndl
-configparameters: cntk.config:numCPUThreads=8
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=_out
-configparameters: cntk.config:stderr=gpu.txt
-configparameters: cntk.config:test=[
+configparameters: cntk.cntk:command=train:test
+configparameters: cntk.cntk:ConfigDir=QuickE2E
+configparameters: cntk.cntk:DataDir=Data
+configparameters: cntk.cntk:deviceId=Auto
+configparameters: cntk.cntk:ndlMacros=QuickE2E/Macros.ndl
+configparameters: cntk.cntk:numCPUThreads=8
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=_out
+configparameters: cntk.cntk:stderr=gpu.txt
+configparameters: cntk.cntk:test=[
     action = "test"
     modelPath = "_out/models/cntk.dnn"
     NDLNetworkBuilder = [
@@ -1097,7 +1097,7 @@ configparameters: cntk.config:test=[
     ]    
 ]
 
-configparameters: cntk.config:train=[
+configparameters: cntk.cntk:train=[
     action = "train"
     modelPath = "_out/models/cntk.dnn"
     traceLevel = 1

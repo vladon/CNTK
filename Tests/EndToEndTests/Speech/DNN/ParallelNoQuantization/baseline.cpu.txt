@@ -1,4 +1,4 @@
-=== Running mpiexec -n 3 /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.config RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
+=== Running mpiexec -n 3 /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.cntk RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
@@ -34,7 +34,7 @@ Redirecting stderr to file /tmp/cntk-test-20151002133421.200863/Speech/DNN_Paral
 CNTKModelPath: /tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 0: running on localhost at 2015/10/02 13:34:21
 MPI Rank 0: command line options: 
-MPI Rank 0: configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.config RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr 
+MPI Rank 0: configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.cntk RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr 
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 0: precision=float
@@ -231,13 +231,13 @@ MPI Rank 0:
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 0: configparameters: cntk.config:command=speechTrain
-MPI Rank 0: configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-MPI Rank 0: configparameters: cntk.config:deviceId=-1
-MPI Rank 0: configparameters: cntk.config:parallelTrain=true
-MPI Rank 0: configparameters: cntk.config:precision=float
-MPI Rank 0: configparameters: cntk.config:RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu
-MPI Rank 0: configparameters: cntk.config:speechTrain=[
+MPI Rank 0: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 0: configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+MPI Rank 0: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 0: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 0: configparameters: cntk.cntk:precision=float
+MPI Rank 0: configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu
+MPI Rank 0: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 0:     action=train
 MPI Rank 0:     modelPath=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 0:     deviceId=-1
@@ -323,7 +323,7 @@ MPI Rank 0:       ]
 MPI Rank 0:     ]
 MPI Rank 0: ]
 MPI Rank 0: 
-MPI Rank 0: configparameters: cntk.config:stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
+MPI Rank 0: configparameters: cntk.cntk:stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: command: speechTrain 
 MPI Rank 0: precision = float
@@ -498,7 +498,7 @@ MPI Rank 0: COMPLETED
 MPI Rank 0: ~MPIWrapper
 MPI Rank 1: running on localhost at 2015/10/02 13:34:22
 MPI Rank 1: command line options: 
-MPI Rank 1: configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.config RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr 
+MPI Rank 1: configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.cntk RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr 
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 1: precision=float
@@ -695,13 +695,13 @@ MPI Rank 1:
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 1: configparameters: cntk.config:command=speechTrain
-MPI Rank 1: configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-MPI Rank 1: configparameters: cntk.config:deviceId=-1
-MPI Rank 1: configparameters: cntk.config:parallelTrain=true
-MPI Rank 1: configparameters: cntk.config:precision=float
-MPI Rank 1: configparameters: cntk.config:RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu
-MPI Rank 1: configparameters: cntk.config:speechTrain=[
+MPI Rank 1: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 1: configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+MPI Rank 1: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 1: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 1: configparameters: cntk.cntk:precision=float
+MPI Rank 1: configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu
+MPI Rank 1: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 1:     action=train
 MPI Rank 1:     modelPath=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 1:     deviceId=-1
@@ -787,7 +787,7 @@ MPI Rank 1:       ]
 MPI Rank 1:     ]
 MPI Rank 1: ]
 MPI Rank 1: 
-MPI Rank 1: configparameters: cntk.config:stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
+MPI Rank 1: configparameters: cntk.cntk:stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: command: speechTrain 
 MPI Rank 1: precision = float
@@ -962,7 +962,7 @@ MPI Rank 1: COMPLETED
 MPI Rank 1: ~MPIWrapper
 MPI Rank 2: running on localhost at 2015/10/02 13:34:22
 MPI Rank 2: command line options: 
-MPI Rank 2: configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.config RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr 
+MPI Rank 2: configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/ParallelNoQuantization/../cntk.cntk RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data DeviceId=-1 stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr 
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 2: precision=float
@@ -1159,13 +1159,13 @@ MPI Rank 2:
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 2: configparameters: cntk.config:command=speechTrain
-MPI Rank 2: configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-MPI Rank 2: configparameters: cntk.config:deviceId=-1
-MPI Rank 2: configparameters: cntk.config:parallelTrain=true
-MPI Rank 2: configparameters: cntk.config:precision=float
-MPI Rank 2: configparameters: cntk.config:RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu
-MPI Rank 2: configparameters: cntk.config:speechTrain=[
+MPI Rank 2: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 2: configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+MPI Rank 2: configparameters: cntk.cntk:deviceId=-1
+MPI Rank 2: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 2: configparameters: cntk.cntk:precision=float
+MPI Rank 2: configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu
+MPI Rank 2: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 2:     action=train
 MPI Rank 2:     modelPath=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/models/cntkSpeech.dnn
 MPI Rank 2:     deviceId=-1
@@ -1251,7 +1251,7 @@ MPI Rank 2:       ]
 MPI Rank 2:     ]
 MPI Rank 2: ]
 MPI Rank 2: 
-MPI Rank 2: configparameters: cntk.config:stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
+MPI Rank 2: configparameters: cntk.cntk:stderr=/tmp/cntk-test-20151002133421.200863/Speech/DNN_ParallelNoQuantization@debug_cpu/stderr
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: command: speechTrain 
 MPI Rank 2: precision = float

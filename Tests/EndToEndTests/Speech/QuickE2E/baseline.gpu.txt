@@ -1,7 +1,7 @@
-=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0
+=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0
 running on localhost at 2015/10/24 12:49:00
 command line: 
-/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0 
+/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -184,14 +184,14 @@ DeviceId=0
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain
-configparameters: cntk.config:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E
-configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-configparameters: cntk.config:deviceId=0
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:command=speechTrain
+configparameters: cntk.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E
+configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+configparameters: cntk.cntk:deviceId=0
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu/models/cntkSpeech.dnn
     deviceId=0
@@ -556,10 +556,10 @@ CNTKCommandTrainEnd: speechTrain
 COMPLETED
 === Deleting last epoch data
 ==== Re-running from checkpoint
-=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0
+=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0
 running on localhost at 2015/10/24 12:49:11
 command line: 
-/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0 
+/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E DeviceId=0 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -742,14 +742,14 @@ DeviceId=0
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain
-configparameters: cntk.config:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E
-configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
-configparameters: cntk.config:deviceId=0
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:command=speechTrain
+configparameters: cntk.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/QuickE2E
+configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/Speech/Data
+configparameters: cntk.cntk:deviceId=0
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20151024124900.548963/Speech_QuickE2E@debug_gpu/models/cntkSpeech.dnn
     deviceId=0

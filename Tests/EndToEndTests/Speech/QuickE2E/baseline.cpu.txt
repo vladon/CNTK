@@ -1,7 +1,7 @@
-=== Running /home/mluser/CNTK/public-master/build/debug/bin/cntk configFile=/home/mluser/CNTK/public-master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data DeviceId=-1
+=== Running /home/mluser/CNTK/public-master/build/debug/bin/cntk configFile=/home/mluser/CNTK/public-master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data DeviceId=-1
 running on localhost at 2015/08/25 20:26:10
 command line options: 
-configFile=/home/mluser/CNTK/public-master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data DeviceId=-1 
+configFile=/home/mluser/CNTK/public-master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -132,13 +132,13 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain
-configparameters: cntk.config:DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:command=speechTrain
+configparameters: cntk.cntk:DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu/models/cntkSpeech.dnn
     deviceId=-1
@@ -345,7 +345,7 @@ COMPLETED
 ==== Re-running from checkpoint
 running on localhost at 2015/08/25 20:26:31
 command line options: 
-configFile=/home/mluser/CNTK/public-master/Tests/Speech/QuickE2E/cntk.config RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data DeviceId=-1 
+configFile=/home/mluser/CNTK/public-master/Tests/Speech/QuickE2E/cntk.cntk RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -476,13 +476,13 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain
-configparameters: cntk.config:DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:command=speechTrain
+configparameters: cntk.cntk:DataDir=/home/mluser/CNTK/public-master/Tests/Speech/Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20150825202610.425642/Speech_QuickE2E@debug_cpu/models/cntkSpeech.dnn
     deviceId=-1

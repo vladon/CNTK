@@ -1,4 +1,4 @@
-=== Running mpiexec -n 3 /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.config currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
+=== Running mpiexec -n 3 /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.cntk currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
@@ -43,7 +43,7 @@ MPI Rank 0: 		Build SHA1: f88156c7f48e6418e0e5e2998e159c54aaca3c1d
 MPI Rank 0: -------------------------------------------------------------------
 MPI Rank 0: running on localhost at 2016/01/06 23:25:24
 MPI Rank 0: command line: 
-MPI Rank 0: /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.config currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr 
+MPI Rank 0: /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.cntk currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr 
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 0: precision = "float"
@@ -258,16 +258,16 @@ MPI Rank 0:
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 0: configparameters: cntk.config:command=speechTrain
-MPI Rank 0: configparameters: cntk.config:ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/..
-MPI Rank 0: configparameters: cntk.config:currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
-MPI Rank 0: configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
-MPI Rank 0: configparameters: cntk.config:deviceId=0
-MPI Rank 0: configparameters: cntk.config:numCPUThreads=2
-MPI Rank 0: configparameters: cntk.config:parallelTrain=true
-MPI Rank 0: configparameters: cntk.config:precision=double
-MPI Rank 0: configparameters: cntk.config:RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu
-MPI Rank 0: configparameters: cntk.config:speechTrain=[
+MPI Rank 0: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 0: configparameters: cntk.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/..
+MPI Rank 0: configparameters: cntk.cntk:currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
+MPI Rank 0: configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
+MPI Rank 0: configparameters: cntk.cntk:deviceId=0
+MPI Rank 0: configparameters: cntk.cntk:numCPUThreads=2
+MPI Rank 0: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 0: configparameters: cntk.cntk:precision=double
+MPI Rank 0: configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu
+MPI Rank 0: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 0:     action = "train"
 MPI Rank 0:     modelPath = "/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/models/cntkSpeech.dnn"
 MPI Rank 0:     deviceId = 0
@@ -353,7 +353,7 @@ MPI Rank 0:         ]
 MPI Rank 0:     ]
 MPI Rank 0: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] [SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] [SGD=[maxEpochs=4]] [SGD=[ParallelTrain=[syncPerfStats=5]]]
 MPI Rank 0: 
-MPI Rank 0: configparameters: cntk.config:stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
+MPI Rank 0: configparameters: cntk.cntk:stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: command: speechTrain 
 MPI Rank 0: precision = double
@@ -899,7 +899,7 @@ MPI Rank 1: 		Build SHA1: f88156c7f48e6418e0e5e2998e159c54aaca3c1d
 MPI Rank 1: -------------------------------------------------------------------
 MPI Rank 1: running on localhost at 2016/01/06 23:25:25
 MPI Rank 1: command line: 
-MPI Rank 1: /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.config currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr 
+MPI Rank 1: /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.cntk currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr 
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 1: precision = "float"
@@ -1114,16 +1114,16 @@ MPI Rank 1:
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 1: configparameters: cntk.config:command=speechTrain
-MPI Rank 1: configparameters: cntk.config:ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/..
-MPI Rank 1: configparameters: cntk.config:currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
-MPI Rank 1: configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
-MPI Rank 1: configparameters: cntk.config:deviceId=0
-MPI Rank 1: configparameters: cntk.config:numCPUThreads=2
-MPI Rank 1: configparameters: cntk.config:parallelTrain=true
-MPI Rank 1: configparameters: cntk.config:precision=double
-MPI Rank 1: configparameters: cntk.config:RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu
-MPI Rank 1: configparameters: cntk.config:speechTrain=[
+MPI Rank 1: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 1: configparameters: cntk.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/..
+MPI Rank 1: configparameters: cntk.cntk:currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
+MPI Rank 1: configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
+MPI Rank 1: configparameters: cntk.cntk:deviceId=0
+MPI Rank 1: configparameters: cntk.cntk:numCPUThreads=2
+MPI Rank 1: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 1: configparameters: cntk.cntk:precision=double
+MPI Rank 1: configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu
+MPI Rank 1: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 1:     action = "train"
 MPI Rank 1:     modelPath = "/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/models/cntkSpeech.dnn"
 MPI Rank 1:     deviceId = 0
@@ -1209,7 +1209,7 @@ MPI Rank 1:         ]
 MPI Rank 1:     ]
 MPI Rank 1: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] [SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] [SGD=[maxEpochs=4]] [SGD=[ParallelTrain=[syncPerfStats=5]]]
 MPI Rank 1: 
-MPI Rank 1: configparameters: cntk.config:stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
+MPI Rank 1: configparameters: cntk.cntk:stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: command: speechTrain 
 MPI Rank 1: precision = double
@@ -1755,7 +1755,7 @@ MPI Rank 2: 		Build SHA1: f88156c7f48e6418e0e5e2998e159c54aaca3c1d
 MPI Rank 2: -------------------------------------------------------------------
 MPI Rank 2: running on localhost at 2016/01/06 23:25:25
 MPI Rank 2: command line: 
-MPI Rank 2: /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.config currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr 
+MPI Rank 2: /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/../cntk.cntk currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/.. DeviceId=0 numCPUThreads=2 precision=double speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] speechTrain=[SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] speechTrain=[SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] speechTrain=[SGD=[maxEpochs=4]] speechTrain=[SGD=[ParallelTrain=[syncPerfStats=5]]] stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr 
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 2: precision = "float"
@@ -1970,16 +1970,16 @@ MPI Rank 2:
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 2: configparameters: cntk.config:command=speechTrain
-MPI Rank 2: configparameters: cntk.config:ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/..
-MPI Rank 2: configparameters: cntk.config:currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
-MPI Rank 2: configparameters: cntk.config:DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
-MPI Rank 2: configparameters: cntk.config:deviceId=0
-MPI Rank 2: configparameters: cntk.config:numCPUThreads=2
-MPI Rank 2: configparameters: cntk.config:parallelTrain=true
-MPI Rank 2: configparameters: cntk.config:precision=double
-MPI Rank 2: configparameters: cntk.config:RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu
-MPI Rank 2: configparameters: cntk.config:speechTrain=[
+MPI Rank 2: configparameters: cntk.cntk:command=speechTrain
+MPI Rank 2: configparameters: cntk.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/DNN/ParallelNoQuantizationBufferedAsyncGradientAggregation/..
+MPI Rank 2: configparameters: cntk.cntk:currentDirectory=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
+MPI Rank 2: configparameters: cntk.cntk:DataDir=/home/mluser/src/cplx_master/Tests/EndToEndTests/Speech/Data
+MPI Rank 2: configparameters: cntk.cntk:deviceId=0
+MPI Rank 2: configparameters: cntk.cntk:numCPUThreads=2
+MPI Rank 2: configparameters: cntk.cntk:parallelTrain=true
+MPI Rank 2: configparameters: cntk.cntk:precision=double
+MPI Rank 2: configparameters: cntk.cntk:RunDir=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu
+MPI Rank 2: configparameters: cntk.cntk:speechTrain=[
 MPI Rank 2:     action = "train"
 MPI Rank 2:     modelPath = "/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/models/cntkSpeech.dnn"
 MPI Rank 2:     deviceId = 0
@@ -2065,7 +2065,7 @@ MPI Rank 2:         ]
 MPI Rank 2:     ]
 MPI Rank 2: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=64]]]] [SGD=[ParallelTrain=[DataParallelSGD=[useBufferedAsyncGradientAggregation=true]]]] [SGD=[ParallelTrain=[parallelizationStartEpoch=2]]] [SGD=[maxEpochs=4]] [SGD=[ParallelTrain=[syncPerfStats=5]]]
 MPI Rank 2: 
-MPI Rank 2: configparameters: cntk.config:stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
+MPI Rank 2: configparameters: cntk.cntk:stderr=/tmp/cntk-test-20160106232524.94334/Speech/DNN_ParallelNoQuantizationBufferedAsyncGradientAggregation@debug_gpu/stderr
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: command: speechTrain 
 MPI Rank 2: precision = double

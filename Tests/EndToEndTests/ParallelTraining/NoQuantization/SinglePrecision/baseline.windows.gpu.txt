@@ -1,4 +1,4 @@
-=== Running C:\Program Files\Microsoft MPI\Bin\/mpiexec.exe -n 4 E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.config RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
+=== Running C:\Program Files\Microsoft MPI\Bin\/mpiexec.exe -n 4 E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
 MPIWrapper: initializing MPI
@@ -47,7 +47,7 @@ MPI Rank 0: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 0: -------------------------------------------------------------------
 MPI Rank 0: running on Amitaga-Win-DT3 at 2015/10/24 21:49:38
 MPI Rank 0: command line: 
-MPI Rank 0: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.config RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
+MPI Rank 0: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 0: deviceId=$DeviceId$
@@ -174,14 +174,14 @@ MPI Rank 0:
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: 
 MPI Rank 0: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 0: configparameters: SimpleMultiGPU.config:command=SimpleMultiGPU
-MPI Rank 0: configparameters: SimpleMultiGPU.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
-MPI Rank 0: configparameters: SimpleMultiGPU.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
-MPI Rank 0: configparameters: SimpleMultiGPU.config:deviceId=0
-MPI Rank 0: configparameters: SimpleMultiGPU.config:parallelTrain=true
-MPI Rank 0: configparameters: SimpleMultiGPU.config:precision=float
-MPI Rank 0: configparameters: SimpleMultiGPU.config:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
-MPI Rank 0: configparameters: SimpleMultiGPU.config:SimpleMultiGPU=[
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:command=SimpleMultiGPU
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:deviceId=0
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:parallelTrain=true
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:precision=float
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:SimpleMultiGPU=[
 MPI Rank 0:     action=train
 MPI Rank 0:     modelPath=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/models/Simple.dnn
 MPI Rank 0:     deviceId=0
@@ -229,7 +229,7 @@ MPI Rank 0:       ]
 MPI Rank 0:     ]
 MPI Rank 0: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]]
 MPI Rank 0: 
-MPI Rank 0: configparameters: SimpleMultiGPU.config:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
+MPI Rank 0: configparameters: SimpleMultiGPU.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
 MPI Rank 0: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 0: command: SimpleMultiGPU 
 MPI Rank 0: precision = float
@@ -650,7 +650,7 @@ MPI Rank 1: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 1: -------------------------------------------------------------------
 MPI Rank 1: running on Amitaga-Win-DT3 at 2015/10/24 21:49:38
 MPI Rank 1: command line: 
-MPI Rank 1: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.config RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
+MPI Rank 1: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 1: deviceId=$DeviceId$
@@ -777,14 +777,14 @@ MPI Rank 1:
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: 
 MPI Rank 1: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 1: configparameters: SimpleMultiGPU.config:command=SimpleMultiGPU
-MPI Rank 1: configparameters: SimpleMultiGPU.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
-MPI Rank 1: configparameters: SimpleMultiGPU.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
-MPI Rank 1: configparameters: SimpleMultiGPU.config:deviceId=0
-MPI Rank 1: configparameters: SimpleMultiGPU.config:parallelTrain=true
-MPI Rank 1: configparameters: SimpleMultiGPU.config:precision=float
-MPI Rank 1: configparameters: SimpleMultiGPU.config:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
-MPI Rank 1: configparameters: SimpleMultiGPU.config:SimpleMultiGPU=[
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:command=SimpleMultiGPU
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:deviceId=0
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:parallelTrain=true
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:precision=float
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:SimpleMultiGPU=[
 MPI Rank 1:     action=train
 MPI Rank 1:     modelPath=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/models/Simple.dnn
 MPI Rank 1:     deviceId=0
@@ -832,7 +832,7 @@ MPI Rank 1:       ]
 MPI Rank 1:     ]
 MPI Rank 1: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]]
 MPI Rank 1: 
-MPI Rank 1: configparameters: SimpleMultiGPU.config:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
+MPI Rank 1: configparameters: SimpleMultiGPU.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
 MPI Rank 1: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 1: command: SimpleMultiGPU 
 MPI Rank 1: precision = float
@@ -1253,7 +1253,7 @@ MPI Rank 2: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 2: -------------------------------------------------------------------
 MPI Rank 2: running on Amitaga-Win-DT3 at 2015/10/24 21:49:39
 MPI Rank 2: command line: 
-MPI Rank 2: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.config RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
+MPI Rank 2: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 2: deviceId=$DeviceId$
@@ -1380,14 +1380,14 @@ MPI Rank 2:
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: 
 MPI Rank 2: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 2: configparameters: SimpleMultiGPU.config:command=SimpleMultiGPU
-MPI Rank 2: configparameters: SimpleMultiGPU.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
-MPI Rank 2: configparameters: SimpleMultiGPU.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
-MPI Rank 2: configparameters: SimpleMultiGPU.config:deviceId=0
-MPI Rank 2: configparameters: SimpleMultiGPU.config:parallelTrain=true
-MPI Rank 2: configparameters: SimpleMultiGPU.config:precision=float
-MPI Rank 2: configparameters: SimpleMultiGPU.config:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
-MPI Rank 2: configparameters: SimpleMultiGPU.config:SimpleMultiGPU=[
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:command=SimpleMultiGPU
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:deviceId=0
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:parallelTrain=true
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:precision=float
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:SimpleMultiGPU=[
 MPI Rank 2:     action=train
 MPI Rank 2:     modelPath=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/models/Simple.dnn
 MPI Rank 2:     deviceId=0
@@ -1435,7 +1435,7 @@ MPI Rank 2:       ]
 MPI Rank 2:     ]
 MPI Rank 2: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]]
 MPI Rank 2: 
-MPI Rank 2: configparameters: SimpleMultiGPU.config:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
+MPI Rank 2: configparameters: SimpleMultiGPU.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
 MPI Rank 2: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 2: command: SimpleMultiGPU 
 MPI Rank 2: precision = float
@@ -1856,7 +1856,7 @@ MPI Rank 3: 		CUDA_PATH: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0
 MPI Rank 3: -------------------------------------------------------------------
 MPI Rank 3: running on Amitaga-Win-DT3 at 2015/10/24 21:49:39
 MPI Rank 3: command line: 
-MPI Rank 3: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.config RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
+MPI Rank 3: E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining/SimpleMultiGPU.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining DeviceId=0 precision=float SimpleMultiGPU=[SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]] stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr 
 MPI Rank 3: 
 MPI Rank 3: >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 MPI Rank 3: deviceId=$DeviceId$
@@ -1983,14 +1983,14 @@ MPI Rank 3:
 MPI Rank 3: <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 3: 
 MPI Rank 3: >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-MPI Rank 3: configparameters: SimpleMultiGPU.config:command=SimpleMultiGPU
-MPI Rank 3: configparameters: SimpleMultiGPU.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
-MPI Rank 3: configparameters: SimpleMultiGPU.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
-MPI Rank 3: configparameters: SimpleMultiGPU.config:deviceId=0
-MPI Rank 3: configparameters: SimpleMultiGPU.config:parallelTrain=true
-MPI Rank 3: configparameters: SimpleMultiGPU.config:precision=float
-MPI Rank 3: configparameters: SimpleMultiGPU.config:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
-MPI Rank 3: configparameters: SimpleMultiGPU.config:SimpleMultiGPU=[
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:command=SimpleMultiGPU
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\ParallelTraining\Data
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:deviceId=0
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:parallelTrain=true
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:precision=float
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:SimpleMultiGPU=[
 MPI Rank 3:     action=train
 MPI Rank 3:     modelPath=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/models/Simple.dnn
 MPI Rank 3:     deviceId=0
@@ -2038,7 +2038,7 @@ MPI Rank 3:       ]
 MPI Rank 3:     ]
 MPI Rank 3: ] [SGD=[ParallelTrain=[DataParallelSGD=[gradientBits=32]]]]
 MPI Rank 3: 
-MPI Rank 3: configparameters: SimpleMultiGPU.config:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
+MPI Rank 3: configparameters: SimpleMultiGPU.cntk:stderr=C:\cygwin64\tmp\cntk-test-20151024134937.188247\ParallelTraining\NoQuantization_SinglePrecision@debug_gpu/stderr
 MPI Rank 3: <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 MPI Rank 3: command: SimpleMultiGPU 
 MPI Rank 3: precision = float
