@@ -1,7 +1,7 @@
-=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/cntk_sequence.config RunDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu DataDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining DeviceId=0 currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData
+=== Running /home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/cntk_sequence.cntk RunDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu DataDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining DeviceId=0 currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData
 running on localhost at 2015/11/19 17:25:45
 command line: 
-/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/cntk_sequence.config RunDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu DataDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining DeviceId=0 currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData 
+/home/mluser/src/cplx_master/build/debug/bin/cntk configFile=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/cntk_sequence.cntk RunDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu DataDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining DeviceId=0 currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -306,7 +306,7 @@ currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk_sequence.config:AddLayer2=[    
+configparameters: cntk_sequence.cntk:AddLayer2=[    
     action=edit
     CurrLayer=1
     NewLayer=2
@@ -315,7 +315,7 @@ configparameters: cntk_sequence.config:AddLayer2=[
     editPath=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/add_layer.mel
 ]
 
-configparameters: cntk_sequence.config:AddLayer3=[    
+configparameters: cntk_sequence.cntk:AddLayer3=[    
     action=edit
     CurrLayer=2
     NewLayer=3
@@ -324,12 +324,12 @@ configparameters: cntk_sequence.config:AddLayer3=[
     editPath=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/add_layer.mel
 ]
 
-configparameters: cntk_sequence.config:command=DPT_Pre1:AddLayer2:DPT_Pre2:AddLayer3:speechTrain:replaceCriterionNode:sequenceTrain
-configparameters: cntk_sequence.config:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining
-configparameters: cntk_sequence.config:currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData
-configparameters: cntk_sequence.config:DataDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData
-configparameters: cntk_sequence.config:deviceId=0
-configparameters: cntk_sequence.config:DPT_Pre1=[
+configparameters: cntk_sequence.cntk:command=DPT_Pre1:AddLayer2:DPT_Pre2:AddLayer3:speechTrain:replaceCriterionNode:sequenceTrain
+configparameters: cntk_sequence.cntk:ConfigDir=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining
+configparameters: cntk_sequence.cntk:currentDirectory=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData
+configparameters: cntk_sequence.cntk:DataDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/TestData
+configparameters: cntk_sequence.cntk:deviceId=0
+configparameters: cntk_sequence.cntk:DPT_Pre1=[
     action=train
     modelPath=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/models/Pre1/cntkSpeech
     NDLNetworkBuilder=[
@@ -337,7 +337,7 @@ configparameters: cntk_sequence.config:DPT_Pre1=[
     ]
 ]
 
-configparameters: cntk_sequence.config:DPT_Pre2=[
+configparameters: cntk_sequence.cntk:DPT_Pre2=[
     action=train
     modelPath=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/models/Pre2/cntkSpeech
     NDLNetworkBuilder=[
@@ -345,12 +345,12 @@ configparameters: cntk_sequence.config:DPT_Pre2=[
     ]
 ]
 
-configparameters: cntk_sequence.config:GlobalInvStd=GlobalStats/var.363
-configparameters: cntk_sequence.config:GlobalMean=GlobalStats/mean.363
-configparameters: cntk_sequence.config:GlobalPrior=GlobalStats/prior.132
-configparameters: cntk_sequence.config:ndlMacros=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/macros.txt
-configparameters: cntk_sequence.config:precision=float
-configparameters: cntk_sequence.config:reader=[
+configparameters: cntk_sequence.cntk:GlobalInvStd=GlobalStats/var.363
+configparameters: cntk_sequence.cntk:GlobalMean=GlobalStats/mean.363
+configparameters: cntk_sequence.cntk:GlobalPrior=GlobalStats/prior.132
+configparameters: cntk_sequence.cntk:ndlMacros=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/macros.txt
+configparameters: cntk_sequence.cntk:precision=float
+configparameters: cntk_sequence.cntk:reader=[
   readerType=HTKMLFReader
   readMethod=blockRandomize
   miniBatchMode=Partial
@@ -369,15 +369,15 @@ configparameters: cntk_sequence.config:reader=[
   ]
 ]
 
-configparameters: cntk_sequence.config:replaceCriterionNode=[
+configparameters: cntk_sequence.cntk:replaceCriterionNode=[
     action=edit
     CurrModel=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/models/cntkSpeech
     NewModel=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/models/cntkSpeech.sequence.0
     editPath=/home/mluser/src/cplx_master/Tests/Speech/DNN/SequenceTraining/replace_ce_with_sequence_criterion.mel
 ]
 
-configparameters: cntk_sequence.config:RunDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu
-configparameters: cntk_sequence.config:sequenceTrain=[
+configparameters: cntk_sequence.cntk:RunDir=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu
+configparameters: cntk_sequence.cntk:sequenceTrain=[
     action=train
     modelPath=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/models/cntkSpeech.sequence
     deviceId=0
@@ -427,7 +427,7 @@ configparameters: cntk_sequence.config:sequenceTrain=[
     ]
 ]
 
-configparameters: cntk_sequence.config:SGD=[
+configparameters: cntk_sequence.cntk:SGD=[
     epochSize=81920
     minibatchSize=256
     learningRatesPerMB=0.8
@@ -437,7 +437,7 @@ configparameters: cntk_sequence.config:SGD=[
     maxEpochs=2
 ]
 
-configparameters: cntk_sequence.config:speechTrain=[
+configparameters: cntk_sequence.cntk:speechTrain=[
     action=train
     modelPath=/tmp/cntk-test-20151119172541.45857/Speech/DNN_SequenceTraining@debug_gpu/models/cntkSpeech
     deviceId=0
@@ -459,8 +459,8 @@ configparameters: cntk_sequence.config:speechTrain=[
     ]
 ]
 
-configparameters: cntk_sequence.config:traceLevel=1
-configparameters: cntk_sequence.config:Truncated=false
+configparameters: cntk_sequence.cntk:traceLevel=1
+configparameters: cntk_sequence.cntk:Truncated=false
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: DPT_Pre1 AddLayer2 DPT_Pre2 AddLayer3 speechTrain replaceCriterionNode sequenceTrain 
 precision = float

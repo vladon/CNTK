@@ -9,7 +9,7 @@ Build info:
 -------------------------------------------------------------------
 running on alexey-rz at 2015/11/23 10:39:10
 command line: 
-C:\src\cntk\x64\Release\CNTK.exe configFile=C:\src\cntk\Tests\Image\QuickE2E\cntk.config RunDir=C:\src\cntk\Tests\Image\_run DataDir=C:\src\cntk\Tests\Image\Data ConfigDir=C:\src\cntk\Tests\Image\QuickE2E DeviceId=-1 
+C:\src\cntk\x64\Release\CNTK.exe configFile=C:\src\cntk\Tests\Image\QuickE2E\cntk.cntk RunDir=C:\src\cntk\Tests\Image\_run DataDir=C:\src\cntk\Tests\Image\Data ConfigDir=C:\src\cntk\Tests\Image\QuickE2E DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -140,15 +140,15 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=Train:Test
-configparameters: cntk.config:ConfigDir=C:\src\cntk\Tests\Image\QuickE2E
-configparameters: cntk.config:DataDir=C:\src\cntk\Tests\Image\Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:ndlMacros=C:\src\cntk\Tests\Image\QuickE2E/Macros.ndl
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=C:\src\cntk\Tests\Image\_run
-configparameters: cntk.config:Test=[
+configparameters: cntk.cntk:command=Train:Test
+configparameters: cntk.cntk:ConfigDir=C:\src\cntk\Tests\Image\QuickE2E
+configparameters: cntk.cntk:DataDir=C:\src\cntk\Tests\Image\Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:ndlMacros=C:\src\cntk\Tests\Image\QuickE2E/Macros.ndl
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=C:\src\cntk\Tests\Image\_run
+configparameters: cntk.cntk:Test=[
     action=test
     modelPath=C:\src\cntk\Tests\Image\_run/models/cntk.dnn
      NDLNetworkBuilder=[
@@ -170,7 +170,7 @@ configparameters: cntk.config:Test=[
     ]    
 ]
 
-configparameters: cntk.config:Train=[
+configparameters: cntk.cntk:Train=[
     action=train
     modelPath=C:\src\cntk\Tests\Image\_run/models/cntk.dnn
     deviceId=-1
@@ -1424,7 +1424,7 @@ Build info:
 -------------------------------------------------------------------
 running on alexey-rz at 2015/11/23 10:40:05
 command line: 
-C:\src\cntk\x64\Release\CNTK.exe configFile=C:\src\cntk\Tests\Image\QuickE2E\cntk.config RunDir=C:\src\cntk\Tests\Image\_run DataDir=C:\src\cntk\Tests\Image\Data ConfigDir=C:\src\cntk\Tests\Image\QuickE2E DeviceId=-1 
+C:\src\cntk\x64\Release\CNTK.exe configFile=C:\src\cntk\Tests\Image\QuickE2E\cntk.cntk RunDir=C:\src\cntk\Tests\Image\_run DataDir=C:\src\cntk\Tests\Image\Data ConfigDir=C:\src\cntk\Tests\Image\QuickE2E DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -1555,15 +1555,15 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=Train:Test
-configparameters: cntk.config:ConfigDir=C:\src\cntk\Tests\Image\QuickE2E
-configparameters: cntk.config:DataDir=C:\src\cntk\Tests\Image\Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:ndlMacros=C:\src\cntk\Tests\Image\QuickE2E/Macros.ndl
-configparameters: cntk.config:parallelTrain=false
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=C:\src\cntk\Tests\Image\_run
-configparameters: cntk.config:Test=[
+configparameters: cntk.cntk:command=Train:Test
+configparameters: cntk.cntk:ConfigDir=C:\src\cntk\Tests\Image\QuickE2E
+configparameters: cntk.cntk:DataDir=C:\src\cntk\Tests\Image\Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:ndlMacros=C:\src\cntk\Tests\Image\QuickE2E/Macros.ndl
+configparameters: cntk.cntk:parallelTrain=false
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=C:\src\cntk\Tests\Image\_run
+configparameters: cntk.cntk:Test=[
     action=test
     modelPath=C:\src\cntk\Tests\Image\_run/models/cntk.dnn
      NDLNetworkBuilder=[
@@ -1585,7 +1585,7 @@ configparameters: cntk.config:Test=[
     ]    
 ]
 
-configparameters: cntk.config:Train=[
+configparameters: cntk.cntk:Train=[
     action=train
     modelPath=C:\src\cntk\Tests\Image\_run/models/cntk.dnn
     deviceId=-1

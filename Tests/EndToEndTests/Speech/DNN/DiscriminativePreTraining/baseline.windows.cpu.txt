@@ -1,4 +1,4 @@
-=== Running /cygdrive/e/NetScale/CNTK/git_repos/cplx_master2/x64/debug/cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN\DiscriminativePreTraining\cntk_dpt.config RunDir=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data DeviceId=-1
+=== Running /cygdrive/e/NetScale/CNTK/git_repos/cplx_master2/x64/debug/cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN\DiscriminativePreTraining\cntk_dpt.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data DeviceId=-1
 -------------------------------------------------------------------
 Build info: 
 
@@ -10,7 +10,7 @@ Build info:
 -------------------------------------------------------------------
 running on Amitaga-Win-DT3 at 2015/10/13 02:36:57
 command line options: 
-configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN\DiscriminativePreTraining\cntk_dpt.config RunDir=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data DeviceId=-1 
+configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\DNN\DiscriminativePreTraining\cntk_dpt.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -199,7 +199,7 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk_dpt.config:AddLayer2=[    
+configparameters: cntk_dpt.cntk:AddLayer2=[    
     action=edit
     CurrLayer=1
     NewLayer=2
@@ -208,7 +208,7 @@ configparameters: cntk_dpt.config:AddLayer2=[
     editPath=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data/ndl/add_layer.mel
 ]
 
-configparameters: cntk_dpt.config:AddLayer3=[    
+configparameters: cntk_dpt.cntk:AddLayer3=[    
     action=edit
     CurrLayer=2
     NewLayer=3
@@ -217,10 +217,10 @@ configparameters: cntk_dpt.config:AddLayer3=[
     editPath=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data/ndl/add_layer.mel
 ]
 
-configparameters: cntk_dpt.config:command=DPT_Pre1:AddLayer2:DPT_Pre2:AddLayer3:speechTrain
-configparameters: cntk_dpt.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-configparameters: cntk_dpt.config:deviceId=-1
-configparameters: cntk_dpt.config:DPT_Pre1=[
+configparameters: cntk_dpt.cntk:command=DPT_Pre1:AddLayer2:DPT_Pre2:AddLayer3:speechTrain
+configparameters: cntk_dpt.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+configparameters: cntk_dpt.cntk:deviceId=-1
+configparameters: cntk_dpt.cntk:DPT_Pre1=[
     action=train
     modelPath=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu/models/Pre1/cntkSpeech
     NDLNetworkBuilder=[
@@ -228,7 +228,7 @@ configparameters: cntk_dpt.config:DPT_Pre1=[
     ]
 ]
 
-configparameters: cntk_dpt.config:DPT_Pre2=[
+configparameters: cntk_dpt.cntk:DPT_Pre2=[
     action=train
     modelPath=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu/models/Pre2/cntkSpeech
     NDLNetworkBuilder=[
@@ -236,12 +236,12 @@ configparameters: cntk_dpt.config:DPT_Pre2=[
     ]
 ]
 
-configparameters: cntk_dpt.config:GlobalInvStd=GlobalStats/var.363
-configparameters: cntk_dpt.config:GlobalMean=GlobalStats/mean.363
-configparameters: cntk_dpt.config:GlobalPrior=GlobalStats/prior.132
-configparameters: cntk_dpt.config:ndlMacros=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data/ndl/macros.txt
-configparameters: cntk_dpt.config:precision=float
-configparameters: cntk_dpt.config:reader=[
+configparameters: cntk_dpt.cntk:GlobalInvStd=GlobalStats/var.363
+configparameters: cntk_dpt.cntk:GlobalMean=GlobalStats/mean.363
+configparameters: cntk_dpt.cntk:GlobalPrior=GlobalStats/prior.132
+configparameters: cntk_dpt.cntk:ndlMacros=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data/ndl/macros.txt
+configparameters: cntk_dpt.cntk:precision=float
+configparameters: cntk_dpt.cntk:reader=[
   readerType=HTKMLFReader
   readMethod=blockRandomize
   miniBatchMode=Partial
@@ -260,8 +260,8 @@ configparameters: cntk_dpt.config:reader=[
   ]
 ]
 
-configparameters: cntk_dpt.config:RunDir=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu
-configparameters: cntk_dpt.config:SGD=[
+configparameters: cntk_dpt.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu
+configparameters: cntk_dpt.cntk:SGD=[
     epochSize=81920
     minibatchSize=256
     learningRatesPerMB=0.8
@@ -271,7 +271,7 @@ configparameters: cntk_dpt.config:SGD=[
     maxEpochs=2
 ]
 
-configparameters: cntk_dpt.config:speechTrain=[
+configparameters: cntk_dpt.cntk:speechTrain=[
     action=train
     modelPath=C:\cygwin64\tmp\cntk-test-20151012183657.970353\Speech\DNN_DiscriminativePreTraining@debug_cpu/models/cntkSpeech
     deviceId=-1
@@ -293,7 +293,7 @@ configparameters: cntk_dpt.config:speechTrain=[
     ]
 ]
 
-configparameters: cntk_dpt.config:traceLevel=1
+configparameters: cntk_dpt.cntk:traceLevel=1
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: DPT_Pre1 AddLayer2 DPT_Pre2 AddLayer3 speechTrain 
 precision = float

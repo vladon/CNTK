@@ -1,4 +1,4 @@
-=== Running /cygdrive/e/NetScale/CNTK/git_repos/cplx_master2/x64/debug/cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD/cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD DeviceId=0
+=== Running /cygdrive/e/NetScale/CNTK/git_repos/cplx_master2/x64/debug/cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD/cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD DeviceId=0
 -------------------------------------------------------------------
 Build info: 
 
@@ -10,7 +10,7 @@ Build info:
 -------------------------------------------------------------------
 running on Amitaga-Win-DT3 at 2015/11/14 06:58:48
 command line: 
-E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD/cntk.config RunDir=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD DeviceId=0 
+E:\NetScale\CNTK\git_repos\cplx_master2\x64\debug\cntk.exe configFile=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD/cntk.cntk RunDir=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD DeviceId=0 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 precision=float
@@ -183,11 +183,11 @@ DeviceId=0
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=speechTrain:modelDecomposition:SVDTrain
-configparameters: cntk.config:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD
-configparameters: cntk.config:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
-configparameters: cntk.config:deviceId=0
-configparameters: cntk.config:modelDecomposition=[
+configparameters: cntk.cntk:command=speechTrain:modelDecomposition:SVDTrain
+configparameters: cntk.cntk:ConfigDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\SVD
+configparameters: cntk.cntk:DataDir=E:\NetScale\CNTK\git_repos\cplx_master2\Tests\Speech\Data
+configparameters: cntk.cntk:deviceId=0
+configparameters: cntk.cntk:modelDecomposition=[
     action=SVD
     modelPath=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu/models/cntkSpeech.dnn
     outputmodelPath=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu/models/cntkSpeech.svd.dnn.0
@@ -195,8 +195,8 @@ configparameters: cntk.config:modelDecomposition=[
     NodeNameRegex=W.*
 ]
 
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:reader=[
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:reader=[
     readerType=HTKMLFReader
     readMethod=blockRandomize
     miniBatchMode=Partial
@@ -215,8 +215,8 @@ configparameters: cntk.config:reader=[
     ]
 ]
 
-configparameters: cntk.config:RunDir=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu
-configparameters: cntk.config:speechTrain=[
+configparameters: cntk.cntk:RunDir=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu
+configparameters: cntk.cntk:speechTrain=[
     action=train
     makeMode=false
     modelPath=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu/models/cntkSpeech.dnn
@@ -245,7 +245,7 @@ configparameters: cntk.config:speechTrain=[
     ]
 ]
 
-configparameters: cntk.config:SVDTrain=[
+configparameters: cntk.cntk:SVDTrain=[
     action=train
     makeMode=true
     modelPath=C:\cygwin64\tmp\cntk-test-20151113225847.730845\Speech_SVD@debug_gpu/models/cntkSpeech.svd.dnn

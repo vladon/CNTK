@@ -1,4 +1,4 @@
-=== Running /cygdrive/c/jenkins/workspace/CNTK-Test-Windows-W1/x64/release/cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.config RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1
+=== Running /cygdrive/c/jenkins/workspace/CNTK-Test-Windows-W1/x64/release/cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.cntk RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1
 -------------------------------------------------------------------
 Build info: 
 
@@ -12,7 +12,7 @@ Build info:
 -------------------------------------------------------------------
 running on liana-08-w at 2015/11/19 14:21:28
 command line: 
-C:\jenkins\workspace\CNTK-Test-Windows-W1\x64\release\cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.config RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1 
+C:\jenkins\workspace\CNTK-Test-Windows-W1\x64\release\cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.cntk RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 command=Simple_Demo:Simple_Demo_Output
@@ -157,16 +157,16 @@ DeviceId=-1
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=Simple_Demo:Simple_Demo_Output
-configparameters: cntk.config:ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple
-configparameters: cntk.config:DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:DeviceNumber=-1
-configparameters: cntk.config:modelPath=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu/models/simple.dnn
-configparameters: cntk.config:outputNodeNames=ScaledLogLikelihood
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu
-configparameters: cntk.config:Simple_Demo=[
+configparameters: cntk.cntk:command=Simple_Demo:Simple_Demo_Output
+configparameters: cntk.cntk:ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple
+configparameters: cntk.cntk:DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:DeviceNumber=-1
+configparameters: cntk.cntk:modelPath=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu/models/simple.dnn
+configparameters: cntk.cntk:outputNodeNames=ScaledLogLikelihood
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu
+configparameters: cntk.cntk:Simple_Demo=[
     action=train
     SimpleNetworkBuilder=[
         layerSizes=2:50*2:2
@@ -205,7 +205,7 @@ labelDim=2
     ]
 ]
 
-configparameters: cntk.config:Simple_Demo_Output=[
+configparameters: cntk.cntk:Simple_Demo_Output=[
     action=write
     reader=[
       readerType=UCIFastReader
@@ -224,7 +224,7 @@ configparameters: cntk.config:Simple_Demo_Output=[
 outputPath=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu/SimpleOutput    
 ]
 
-configparameters: cntk.config:traceLevel=1
+configparameters: cntk.cntk:traceLevel=1
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: Simple_Demo Simple_Demo_Output 
 precision = float
@@ -3616,7 +3616,7 @@ Total Samples Evaluated = 603
 COMPLETED
 === Deleting last epoch data
 ==== Re-running from checkpoint
-=== Running /cygdrive/c/jenkins/workspace/CNTK-Test-Windows-W1/x64/release/cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.config RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1 makeMode=true
+=== Running /cygdrive/c/jenkins/workspace/CNTK-Test-Windows-W1/x64/release/cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.cntk RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1 makeMode=true
 -------------------------------------------------------------------
 Build info: 
 
@@ -3630,7 +3630,7 @@ Build info:
 -------------------------------------------------------------------
 running on liana-08-w at 2015/11/19 14:21:40
 command line: 
-C:\jenkins\workspace\CNTK-Test-Windows-W1\x64\release\cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.config RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1 makeMode=true 
+C:\jenkins\workspace\CNTK-Test-Windows-W1\x64\release\cntk.exe configFile=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple/cntk.cntk RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple DeviceId=-1 makeMode=true 
 
 >>>>>>>>>>>>>>>>>>>> RAW CONFIG (VARIABLES NOT RESOLVED) >>>>>>>>>>>>>>>>>>>>
 command=Simple_Demo:Simple_Demo_Output
@@ -3777,17 +3777,17 @@ makeMode=true
 <<<<<<<<<<<<<<<<<<<< RAW CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>> PROCESSED CONFIG WITH ALL VARIABLES RESOLVED >>>>>>>>>>>>>>>>>>>>
-configparameters: cntk.config:command=Simple_Demo:Simple_Demo_Output
-configparameters: cntk.config:ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple
-configparameters: cntk.config:DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data
-configparameters: cntk.config:deviceId=-1
-configparameters: cntk.config:DeviceNumber=-1
-configparameters: cntk.config:makeMode=true
-configparameters: cntk.config:modelPath=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu/models/simple.dnn
-configparameters: cntk.config:outputNodeNames=ScaledLogLikelihood
-configparameters: cntk.config:precision=float
-configparameters: cntk.config:RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu
-configparameters: cntk.config:Simple_Demo=[
+configparameters: cntk.cntk:command=Simple_Demo:Simple_Demo_Output
+configparameters: cntk.cntk:ConfigDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Simple
+configparameters: cntk.cntk:DataDir=C:\jenkins\workspace\CNTK-Test-Windows-W1\Tests\Speech\Data
+configparameters: cntk.cntk:deviceId=-1
+configparameters: cntk.cntk:DeviceNumber=-1
+configparameters: cntk.cntk:makeMode=true
+configparameters: cntk.cntk:modelPath=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu/models/simple.dnn
+configparameters: cntk.cntk:outputNodeNames=ScaledLogLikelihood
+configparameters: cntk.cntk:precision=float
+configparameters: cntk.cntk:RunDir=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu
+configparameters: cntk.cntk:Simple_Demo=[
     action=train
     SimpleNetworkBuilder=[
         layerSizes=2:50*2:2
@@ -3826,7 +3826,7 @@ labelDim=2
     ]
 ]
 
-configparameters: cntk.config:Simple_Demo_Output=[
+configparameters: cntk.cntk:Simple_Demo_Output=[
     action=write
     reader=[
       readerType=UCIFastReader
@@ -3845,7 +3845,7 @@ configparameters: cntk.config:Simple_Demo_Output=[
 outputPath=C:\windows\TEMP\cntk-test-20151119141632.280376\Speech_Simple@release_cpu/SimpleOutput    
 ]
 
-configparameters: cntk.config:traceLevel=1
+configparameters: cntk.cntk:traceLevel=1
 <<<<<<<<<<<<<<<<<<<< PROCESSED CONFIG WITH ALL VARIABLES RESOLVED <<<<<<<<<<<<<<<<<<<<
 command: Simple_Demo Simple_Demo_Output 
 precision = float
