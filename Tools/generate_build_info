@@ -1,13 +1,19 @@
 #!/bin/bash
 
 # Description: this script is used to generated buildinfo.h in Source/CNTK
-# which will contain the following infomation to be displayed at runtime: 
-#   CUDA_PATH       (if exists) 
-#   CUB_PATH        (if exists)
-#   GIT_COMMIT      
-#   GTT_BRANCH
+# which will contain the following infomation to be displayed at runtime:
 #   BUILDTYPE       (release/debug)
+#   BUILDTYPE       (GPU/CPU-only)
+#   WITH_1BITSGD    (whether 1bit-SGD support was enabled)
 #   MATHLIB         (MKL/ACML)
+#   CUDA_PATH       (if exists, i.e., for GPU builds)
+#   CUB_PATH        (if exists, i.e., for GPU builds)
+#   CUDNN_PATH      (if exists, i.e., only for GPU builds)
+#   GIT_COMMIT      (SHA1, and whether working directory is modified)
+#   GTT_BRANCH      (the current branch)
+#   BUILDER         (user under which the build was done)
+#   BUILDMACHINE    (build machine)
+#   BUILDPATH       (build path)
 
 usage ()
 {
@@ -42,35 +48,41 @@ makebuildinfo()
     GIT_BRANCH=$5
     CUDA_PATH=$6
     CUB_PATH=$7
-    enable_1bitsgd=$8
+    WITH_1BITSGD=$8
+    BUILDER=$9
+    BUILDMACHINE=$10
+    BUILDPATH=$11
 
-    printf "#ifndef _BUILDINFO_H\n"                         >       $target
-    printf "#define _BUILDINFO_H\n"                         >>      $target
-    printf "#define _GIT_EXIST\n"                           >>      $target 
-    printf "#define _MATHLIB_ \"%s\"\n" $MATHLIB            >>      $target
-    printf "#define _BUILDSHA1_ \"%s\"\n" "$GIT_COMMIT"     >>      $target
-    printf "#define _BUILDBRANCH_ \"%s\"\n" $GIT_BRANCH     >>      $target 
-    if [ -z "$CUDA_PATH" ]; then 
-        printf "#define _BUILDTARGET_ \"GPU\"\n"
-    else
-        printf "#define _BUILDTARGET_ \"CPU-only\"\n"
-    fi
-    if [ ! -z "$CUDA_PATH" ]; then 
-        printf "#define _CUDA_PATH_ \"%s\"\n" $CUDA_PATH >> $target
-    fi
-    if [ ! -z "$CUB_PATH" ]; then 
-        printf "#define _CUB_PATH_ \"%s\"\n"  $CUB_PATH  >> $target
-    fi
-    if [ ! -z "$CUDNN_PATH" ]; then 
-        printf "#define _CUDNN_PATH_ \"%s\"\n"  $CUDNN_PATH  >> $target
-    fi
-    printf "#define _BUILDTYPE_ \"%s\"\n" $BUILDTYPE        >>      $target
-    if [ ! -z "$enable_1bitsgd" ]; then 
-        printf "#define _WITH_1BITSGD_ \"yes\"\n" >> $target
-    else
-        printf "#define _WITH_1BITSGD_ \"no\"\n" >> $target
-    fi
-    printf "#endif\n"                                       >>      $target
+    (
+        printf "#ifndef _BUILDINFO_H\n"
+        printf "#define _BUILDINFO_H\n"
+        printf "#define _GIT_EXIST\n"
+        printf "#define _MATHLIB_ \"%s\"\n" "$MATHLIB"
+        printf "#define _BUILDSHA1_ \"%s\"\n" "$GIT_COMMIT"
+        printf "#define _BUILDBRANCH_ \"%s\"\n" "$GIT_BRANCH"
+        if [ -z "$CUDA_PATH" ]; then 
+            printf "#define _BUILDTARGET_ \"CPU-only\"\n"
+        else
+            printf "#define _BUILDTARGET_ \"GPU\"\n"
+            printf "#define _CUDA_PATH_ \"%s\"\n" "$CUDA_PATH"
+        fi
+        if [ ! -z "$CUB_PATH" ]; then 
+            printf "#define _CUB_PATH_ \"%s\"\n"  "$CUB_PATH"
+        fi
+        if [ ! -z "$CUDNN_PATH" ]; then 
+            printf "#define _CUDNN_PATH_ \"%s\"\n"  $CUDNN_PATH
+        fi
+        printf "#define _BUILDTYPE_ \"%s\"\n" "$BUILDTYPE"
+        if [ ! -z "$WITH_1BITSGD" ]; then 
+            printf "#define _WITH_1BITSGD_ \"yes\"\n"
+        else
+            printf "#define _WITH_1BITSGD_ \"no\"\n"
+        fi
+        printf "#define _BUILDER_ \"%s\"\n"  "$BUILDER"
+        printf "#define _BUILDMACHINE_ \"%s\"\n"  "$BUILDMACHINE"
+        printf "#define _BUILDPATH_ \"%s\"\n"  "$BUILDPATH"
+        printf "#endif\n"
+    ) > "$target"
 }
 
 #//////////////////////////////////////////////////////#
@@ -109,7 +121,12 @@ else
     CUBPATH=$CUB_PATH
 fi
 
-# 5. make buildinfo.h 
+# 5. Build machine info
+BUILDER=$USER
+BUILDMACHINE=`hostname`
+BUILDPATH=`pwd`
+
+# 6. make buildinfo.h 
 # TODO should avoid rebuild if not changing
 target=Source/CNTK/buildinfo.h
 if [ ! -d Source ] ; then 
@@ -118,4 +135,16 @@ fi
 if [ -e Source/CNTK/buildinfo.h ] ; then 
     rm Source/CNTK/buildinfo.h
 fi
-makebuildinfo $target $BUILDTYPE $MATHLIB "$GIT_COMMIT" $GIT_BRANCH $CUDAPATH $CUBPATH $CNTK_ENABLE_1BitSGD
+
+makebuildinfo \
+    "$target" \
+    "$BUILDTYPE" \
+    "$MATHLIB" \
+    "$GIT_COMMIT" \
+    "$GIT_BRANCH" \
+    "$CUDAPATH" \
+    "$CUBPATH" \
+    "$CNTK_ENABLE_1BitSGD" \
+    "$BUILDER" \
+    "$BUILDMACHINE" \
+    "$BUILDPATH"

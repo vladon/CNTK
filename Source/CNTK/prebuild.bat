@@ -55,7 +55,7 @@ if "%CNTK_ENABLE_1BitSGD%" == "true" (
     echo #define _WITH_1BITSGD_ "no">>buildinfo.h$$
 )
 
-if not %build_type% == CPU-only (
+if not %build_target% == CPU-only (
     if "%cuda_path%" == "" (
         echo #define _CUDA_PATH_    "NOT_DEFINED"     >> buildinfo.h$$
     ) else (
